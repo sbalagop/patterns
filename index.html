@@ -1,0 +1,34 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Design patterns in JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="item banner">Prototypical inheritence using Constructor functions vs ES6 classes</h1>
+        <div class="item" data-type="constructor-functions">Prototypical inheritence using Constructor functions</div>
+        <div class="item" data-type="classes">Prototypical inheritence using ES6 classes</div>
+    </main>
+</body>
+
+<script>
+    // Event delegation
+    document.querySelector('.container').addEventListener('click', (event) => {
+        switch (event.target.dataset.type) {
+            case 'constructor-functions':
+                window.location = './constructor-functions.html';
+                break;
+            case 'classes':
+                window.location = './classes.html';
+                break;
+        }
+    });
+</script>
+
+</html>

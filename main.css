@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 200px;
+    align-content: bottom;
+}
+
+.container .item {
+    padding: 10px;
+    background-color: gold;
+    margin: auto;
+}
+
+.container .banner {
+    flex-basis: 100%;
+    background-color:white;
+    text-align: center;
+}
+
+.container .item:hover {
+    cursor: pointer;
+}
+
+.container .banner:hover {
+    cursor: auto;
+}
