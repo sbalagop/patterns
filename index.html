@@ -11,9 +11,15 @@
 
 <body>
     <main class="container">
-        <h1 class="item banner">Prototypical inheritence using Constructor functions vs ES6 classes</h1>
+        <h1 class="item banner">Design Patterns</h1>
         <div class="item" data-type="constructor-functions">Prototypical inheritence using Constructor functions</div>
         <div class="item" data-type="classes">Prototypical inheritence using ES6 classes</div>
+        <div class="item" data-type="Singleton">Singleton pattern</div>
+        <div class="item" data-type="Module">Module pattern</div>
+        <div class="item" data-type="Revealing-Module">Revealing Module pattern</div>
+        <div class="item" data-type="Factory">Factory pattern</div>
+        <div class="item" data-type="Decorator">Decorator pattern</div>
+
     </main>
 </body>
 
@@ -26,6 +32,21 @@
                 break;
             case 'classes':
                 window.location = './classes.html';
+                break;
+            case 'Singleton':
+                window.location = './Singleton.html';
+                break;
+            case 'Module':
+                window.location = './Module.html';
+                break;
+            case 'Revealing-Module':
+                window.location = './Revealing-Module.html';
+                break;
+            case 'Factory':
+                window.location = './Factory.html';
+                break;
+            case 'Decorator':
+                window.location = './Decorator.html';
                 break;
         }
     });
