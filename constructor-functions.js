@@ -5,7 +5,11 @@
 
     /** Base constrctor function**/
     function Animal(name) {
+        let color = 'red';
         this.name = name;
+        this.getColor = function() {
+            return color;
+        }
     }
 
     // Static methods are directly added to the constructor function. 
@@ -17,6 +21,7 @@
 
     // Methods are added to the prototype so that they can be inherited
     Animal.prototype.toString = function () {
+        console.log('Animal: ' + lion1.getColor());
         return this.name;
     };
 
@@ -44,6 +49,7 @@
     const lion1 = new Lion('Lion1');
     lion1.run();
     lion1.roar();
+    console.log('aLion1: ' + lion1.getColor());
 
     //Call static method directly on the constructor function.
     Animal.describe();
